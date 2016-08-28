@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PruebaAndroid_EstebanPosada2</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="spl">Eleinco S.A.S</string>
+    <string name="Log">Log In</string>
+    <string name="nameus">Nombre Usuario</string>
+    <string name="mail">Correo</string>
+    <string name="date">Fecha de Nacimiento</string>
+    <string name="menu">Menú</string>
+    <string name="cart">Cartelera</string>
+    <string name="visit">Visitadas</string>
+    <string name="namepel">Nombre: </string>
+    <string name="dura">Duración: </string>
+    <string name="gender">Género: </string>
+    <string name="age">Edad: </string>
+    <string name="hora">Hora</string>
+    <string name="url">URL</string>
+    <string name="acept">Aceptar</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_menu_cine">Menu_cine</string>
+    <string name="title_activity_cartelera">Cartelera</string>
+    <string name="title_activity_visitadas">Visitadas</string>
+</resources>
