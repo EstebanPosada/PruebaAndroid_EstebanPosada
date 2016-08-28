@@ -7,10 +7,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button btnac;
+    EditText user, mail, fecha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +21,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnac = (Button) findViewById(R.id.acept);
+        user = (EditText) findViewById(R.id.name);
+        mail = (EditText) findViewById(R.id.mail);
+        fecha = (EditText) findViewById(R.id.date);
+        final String users = user.getText().toString();
+        final String mails = mail.getText().toString();
+        final String fechas = fecha.getText().toString();
 
         btnac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Menu_cine.class));
+                if (users.equals("") && mails.equals("") && fechas.equals("")) {
+                    startActivity(new Intent(MainActivity.this, Menu_cine.class));
+                } else {
+                    Toast.makeText(MainActivity.this, "Introducir todos los campos", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
